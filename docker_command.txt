@@ -1,0 +1,52 @@
+>>>curl -fsSL https://get.docker.com -o get-docker.sh (Download docker)
+
+>>>sudo sh get-docker.sh (Install Docker)
+
+>>>sudo usermod -aG docker hasan (Set user name)
+
+>>sudo chmod 666 /var/run/docker.sock(Permission active)
+
+>>docker ps
+
+>>docker ps -a (which container is running)
+
+>>docker run hello-world
+
+>>docker run -it ubuntu bash or docker run -it f643c72bc252 /bin/bash  (using image_ID)
+	>>ps (which is running)
+	>>uname -a (check kernal version)
+	>>
+>>docker image ls (image list show korbe)
+
+>>docker rm container_id (remove container id first then remove image)
+
+>>docker rmi image_id ( after delete container id then remove by image_id)
+
+>>docker image pull name_of the_image  or docker run name_of_image
+
+>>sudo docker-compose run web django-admin startproject mysite .
+
+>>sudo apt install docker-compose (when docker-compose not found)
+
+>>sudo chown -R $USER:$USER . (confirm your permission)
+	>>ls -l (check the list of permission)
+
+
+>>docker-compose up (run django project ip is 127.0.0.0:8000)
+
+>>> docker exec django_web_1 python manage.py startapp greet (you can create project in existing container, here existing container name 		django_web_1 , new projeject name greet, exec means execute)(this command run when your container is running,run your project then create)
+
+>>docker-compose build (when update compose file,yml or Dockerfile)
+>> docker push <hub-user>/<repo-name>:<tag>
+   docker push hasanweight/practice:tagname
+   
+>>>docker commit af90cebc9611 hasanweight/custom_django_web
+	(custome image create kore)
+
+>>>docker run -it -d hasanweight/custom_django_web bash(custom image er container toiri kore)
+	docker exec -it 50d3a2a558aa bash (container er bhitor shell create kore)
+
+>>>docker push hasanweight/custom_django_web(docker hub a store hobe image)
+
+>>>docker run -it -d hasanweight/custome_django_web(docker hub theke image download kore anbe)
+
