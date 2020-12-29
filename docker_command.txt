@@ -48,5 +48,10 @@
 
 >>>docker push hasanweight/custom_django_web(docker hub a store hobe image)
 
->>>docker run -it -d hasanweight/custome_django_web(docker hub theke image download kore anbe)
+>>>docker run -it -d hasanweight/custom_django_web(docker hub theke image download kore anbe)
 
+----------------******using git for docker*******----------------------------
+>>> git clone git_path
+>>> pip install -t requirement.txt(specific path)
+>>> docker-compose build 
+>>> python manage.py runserver (for django project)
