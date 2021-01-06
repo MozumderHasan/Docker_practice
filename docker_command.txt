@@ -2,6 +2,8 @@
 
 >>>sudo sh get-docker.sh (Install Docker)
 
+____________**************_______________
+
 >>>sudo usermod -aG docker hasan (Set user name)
 
 >>sudo chmod 666 /var/run/docker.sock(Permission active)
