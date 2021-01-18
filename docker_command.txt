@@ -57,3 +57,6 @@ ____________**************_______________
 >>> pip install -t requirement.txt(specific path)
 >>> docker-compose build 
 >>> python manage.py runserver (for django project)
+
+
+>>add for test
