@@ -58,6 +58,7 @@ ____________**************_______________
 >>> docker-compose build 
 >>> python manage.py runserver (for django project)
 
+>> test text
 
 >>add for test
 >>add another text
